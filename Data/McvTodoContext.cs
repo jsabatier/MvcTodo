@@ -1,7 +1,7 @@
 using Microsoft.EntityFrameworkCore;
 using MvcTodo.Models;
 
-namespace MvcMovie.Data;
+namespace MvcTodo.Data;
 
 public class MvcTodoContext : DbContext
 {
