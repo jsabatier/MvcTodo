@@ -9,13 +9,6 @@ public class Todo
 
     public Todo()
     {
-
-    }
-    public Todo(string task,bool compl,DateTime deadline)
-    {
-        Task =task;
-        Completed= compl;
-        Deadline= deadline;
     }
 
 }
