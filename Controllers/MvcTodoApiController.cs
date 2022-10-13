@@ -21,4 +21,11 @@ public class TodoApiController : ControllerBase
     {
         return await _context.Todos.ToListAsync();
     }
+    public async Task<ActionResult<Todo>> GetMovie(int id)
+    {
+        var todo = await _context.Todos.FindAsync(id);
+        if (todo == null)
+            return NotFound();
+        return todo;
+    }
 }
