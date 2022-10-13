@@ -1,9 +1,12 @@
 using MvcTodo.Models;
+using MvcTodo.Data;
 
 var builder = WebApplication.CreateBuilder(args);
 
 // Add services to the container.
 builder.Services.AddControllersWithViews();
+// Attach an EF Core database context to each query
+builder.Services.AddDbContext<MvcTodoContext>();
 
 var app = builder.Build();
 
