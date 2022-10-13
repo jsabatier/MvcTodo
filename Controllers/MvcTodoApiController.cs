@@ -3,7 +3,7 @@ using Microsoft.EntityFrameworkCore;
 using MvcTodo.Data;
 using MvcTodo.Models;
 
-namespace MvcMovie.Controllers;
+namespace MvcTodo.Controllers;
 
 [Route("api/[controller]")]
 [ApiController]
@@ -40,5 +40,5 @@ public class TodoApiController : ControllerBase
 
         return CreatedAtAction("GetTodo", new { id = todo.Id }, todo);
     }
-    
+
 }
