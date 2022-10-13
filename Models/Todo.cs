@@ -7,5 +7,10 @@ public class Todo
     public bool Completed{get;set;}
     public DateTime Deadline{get;set;}
 
+    public Todo()
+    {
+        
+    }
+
 }
 }

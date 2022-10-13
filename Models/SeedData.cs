@@ -31,6 +31,7 @@ namespace MvcTodo.Models
                     Deadline = DateTime.Parse("2022-10-14"),
                 }
             );
+            context.SaveChanges();
         }
 
         }
